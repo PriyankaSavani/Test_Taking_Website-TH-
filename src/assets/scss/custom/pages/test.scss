@@ -1,0 +1,69 @@
+//
+// test.scss
+//
+
+// test
+.test_answer {
+  border: $border-width solid $border-color;
+  border-radius: $card-border-radius;
+  overflow: hidden;
+  margin-bottom: $spacer;
+  .test_answer_item {
+    position: relative;
+    border-bottom: $border-width solid $border-color;
+    .form-check {
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+    input {
+      position: absolute;
+      top: 30%;
+      left: 35px;
+      &:checked ~ .test_answer_check_inner {
+        opacity: 1 !important;
+      }
+      &:checked ~ label {
+        background-color: lighten($primary, 30%);
+      }
+      &.form-check-input {
+        &:checked {
+          background-color: $primary;
+          border-color: $primary;
+        }
+        &:focus {
+          box-shadow: 0 0 0 0.25rem lighten($primary, 30%);
+        }
+      }
+    }
+    label {
+      display: block;
+      padding: $spacer $spacer $spacer 35px;
+      cursor: pointer;
+    }
+    .test_answer_check_outer {
+      width: 32rem * 1.5;
+      height: 32rem * 1.5;
+      border: $border-width solid $border-color;
+      border-radius: 32rem * 0.75;
+      position: absolute;
+      top: 32rem * 0.75;
+      left: 32rem * 0.75;
+      background-color: $white;
+      cursor: pointer;
+    }
+    .test_answer_check_inner {
+      position: absolute;
+      top: 32rem;
+      left: 32rem;
+      width: 32rem;
+      height: 32rem;
+      border-radius: 32rem * 0.5;
+      background-color: $primary;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+// FONTS
+@import "custom/fonts";
+
+//CORE FILES
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "skins/default/variables";
+@import "skins/default/custom-variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// general
+@import "custom/general";
+
+// components
+@import "components/badge";
+@import "components/buttons";
+@import "components/card";
+@import "components/forms";
+@import "components/navbar";
+@import "components/nav";
+@import "components/tables";
+@import "components/type";
+@import "components/helper";
+@import "components/backgrounds";
+
+// custom plugins
+@import "custom/plugins/slimscroll";
+
+// structure
+@import "custom/structure/sidenav";
+@import "custom/structure/footer";
+
+// custom components
+@import "custom/components/icons";
+@import "custom/components/avatar";
+
+// theme components
+@import "custom/components/header";
+@import "custom/components/hero";
+@import "custom/components/features";
+
+// pages
+@import "custom/pages/test";
